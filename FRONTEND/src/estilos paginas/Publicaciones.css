@@ -1,0 +1,34 @@
+.cont-pag-publicaciones{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 140px;
+  width: 100%;
+}
+
+.cont-productos-publicaciones{
+    margin-top: 30px;
+    width: 60%;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pag-publicaciones-titulo{
+    font-family: "montserrat";
+    font-size: 26px;
+    
+    width: 60%;
+    display: flex;
+    margin: 0px;
+    margin: 10px;
+    color: rgb(40, 115, 177);
+}
+.pag-publicaciones-separador{
+    width: 60%;
+    height: 4px;
+    border-radius: 10px;
+    background-color: rgb(40, 115, 177);
+}

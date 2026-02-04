@@ -1,0 +1,73 @@
+
+.cont-producto-publicaciones{
+    
+    height: 120px;
+    width: 100%;
+    padding: 15px;
+    gap: 20px;
+
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    color: #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "montserrat";
+}
+.cont-producto-publicaciones:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.imagen-producto-publicaciones{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid gray;
+
+}
+
+.cont-datos-producto-publicaciones{
+    color: rgb(50, 141, 216);
+    font-family: "montserrat";
+
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cont-datos-producto-publicaciones h3{
+    color: #333232;
+}
+
+.boton-eliminar-publicaciones{
+    height: 30px;
+    width: 160px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+    background-color: rgb(170, 43, 43);
+    border: none;
+    border-radius: 10px;
+    
+    font-family: "montserrat";
+    font-weight: 700;
+    transition: .3s;
+}
+
+.boton-eliminar.publicaciones:hover{
+    background-color: rgb(211, 51, 51);
+}

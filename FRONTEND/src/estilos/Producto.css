@@ -1,0 +1,54 @@
+.cont-producto {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    color: #000;
+    cursor: pointer;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    width: 220px;
+    
+}
+
+.cont-producto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Imagen */
+.producto-imagen {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Contenedor de datos */
+.cont-datos-producto {
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.cont-datos-producto h3 {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "changa one";
+    margin: 0;
+    color: #333;
+}
+
+.cont-datos-producto h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    color: #1a73e8; /* precio destacado */
+}
+
+

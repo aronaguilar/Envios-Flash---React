@@ -1,0 +1,287 @@
+
+.cont-pag-perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    box-sizing: border-box;
+  
+    width: 100%;
+}
+
+/* =========================
+   CONTENEDOR DATOS PERFIL
+========================= */
+.cont-perfil-cont-datos {
+
+    height: 120px;
+    width: 615px;
+    margin-top: 20px;
+    background: #ffffff;
+    font-family: "montserrat";
+    
+    max-width: 615px;
+
+    padding: 24px;
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   IMAGEN PERFIL
+========================= */
+.cont-imagen {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 3px solid #e0e0e0;
+}
+
+/* =========================
+   NOMBRE
+========================= */
+.cont-nombre {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111;
+
+    margin-bottom: 6px;
+}
+
+/* =========================
+   EMAIL
+========================= */
+.cont-gmail {
+    font-size: 14px;
+    color: #666;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 480px) {
+    .cont-datos {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
+.cont.todo{
+    display: flex;
+}
+
+
+/* =========================
+   CONTENEDOR GENERAL
+========================= */
+.cont-acciones {
+    display: flex;
+    gap: 32px;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =========================
+   CARD BASE
+========================= */
+.card-accion, .card-subida {
+    background-color: #ffffff;
+    width: 300px;
+    padding: 26px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-accion:hover, .card-subida:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+.card-subida{
+    width: 35%;
+}
+
+.cont-todo-opciones{
+    display: flex;
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+.titulo-accion {
+    font-size: 20px;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 6px;
+
+    font-family: "montserrat";
+}
+
+/* =========================
+   INPUTS Y TEXTAREA
+========================= */
+.card-subida input,
+.card-subida textarea {
+    width: 250px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+    font-family: "montserrat";
+    margin: 5px;
+}
+
+.card-accion input:focus,
+.card-accion textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    
+}
+
+#input-descripcion {
+    resize: none;
+    height: 42.16px;
+    font-family: "montserrat";
+}
+
+.selector-opciones{
+   width: 250px;
+    height: 42.16px;
+    padding: 5px 2px;
+    border-radius: 12px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+    font-family: "montserrat";
+    outline: none;
+    padding-left: 10px;
+    margin: 5px;
+    
+}
+
+/* =========================
+   BOTÓN PRIMARIO
+========================= */
+.btn-primario {
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primario:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(37, 99, 235, 0.45);
+}
+
+/* =========================
+   MENSAJE ERROR
+========================= */
+.card-accion p {
+    font-size: 13px;
+    color: #dc2626;
+    text-align: center;
+}
+
+/* =========================
+   MIS PRODUCTOS
+========================= */
+.lista-productos {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.producto-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 14px;
+    border-radius: 12px;
+    background-color: #f9fafb;
+
+    font-size: 14px;
+    color: #1f2937;
+    transition: background-color 0.2s ease;
+}
+
+.producto-item:hover {
+    background-color: #f3f4f6;
+}
+
+/* =========================
+   BOTÓN SECUNDARIO
+========================= */
+.btn-secundario {
+    padding: 6px 14px;
+    border-radius: 10px;
+    border: 1px solid #2563eb;
+    background-color: transparent;
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-secundario:hover {
+    background-color: #2563eb;
+    color: white;
+}
+
+#input-producto{
+    width: 250px;
+    height: 42.16px;
+    padding: 5px 2px;
+    border-radius: 12px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+    font-family: "montserrat";
+    padding-left: 10px;
+}
+
+#input-producto:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.error{
+    font-family: "montserrat" ;
+    font-weight: 700;
+    color: #9c1f1f;
+}

@@ -1,0 +1,122 @@
+
+.cont-producto-carrito{
+    
+    height: 120px;
+    width: 100%;
+    padding: 15px;
+    gap: 20px;
+
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    color: #000;
+
+    display: flex;
+    align-items: center;
+    font-family: "montserrat";
+}
+.cont-producto-carrito:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.imagen-producto-carrito{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid gray;
+
+}
+
+.cont-datos-producto-carrito{
+    color: rgb(50, 141, 216);
+    font-family: "montserrat";
+
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cantidad-producto{
+    width: 130px;
+    height: 30px;
+    gap: 10px;
+    display: flex;
+
+}
+
+.cantidad-producto div{
+    height: 30px;
+    width: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #fffefe;
+    border: 1px solid gray;
+    border-radius: 5px;
+    
+}
+.cantidad-producto button{
+    height: 30px;
+    width: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border: none;
+    border-radius: 50%;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+
+    color: white;
+    font-size: 25px;
+
+}
+
+.btn-cantidad:hover{
+    box-shadow: 0 8px 16px rgba(0, 200, 83, 0.35);
+}
+
+.restar:hover{
+    box-shadow: 0 8px 16px rgba(200, 0, 33, 0.35);
+}
+
+
+.cantidad-producto button img{
+    height: 30px;
+    width: 30px;
+}
+
+.boton-eliminar{
+    height: 30px;
+    width: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+    background-color: rgb(170, 43, 43);
+    border: none;
+    border-radius: 10px;
+    
+    font-family: "montserrat";
+    font-weight: 700;
+    transition: .3s;
+}
+
+.boton-eliminar:hover{
+    background-color: rgb(211, 51, 51);
+}
+

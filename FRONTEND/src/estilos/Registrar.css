@@ -1,0 +1,71 @@
+.contenedor{
+    padding: 15px;
+    margin-top: 100px;
+    height: 400px;
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(53, 50, 50);
+    border-radius: 10px;
+}
+.titulo{
+    height: 50px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.contenedor form{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.input{
+    height: 30px;
+    width: 70%;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: none;
+    transition: .3s;
+}
+
+.input:hover{
+    background-color: rgb(177, 182, 182);
+}
+
+#input_nombre{
+    height: 30px;
+    width: 70%;
+    border-radius: 10px;
+    border: none;
+}
+#input_apellido{
+    height: 30px;
+    width: 70%;
+    border-radius: 10px;
+    border: none;
+}
+
+#boton_enviar{
+    height: 30px;
+    width: 40%;
+    border-radius: 10px;
+    border: none;
+    transition: .1s;
+}
+#boton_enviar:hover{
+    background-color: rgb(74, 80, 78);
+}

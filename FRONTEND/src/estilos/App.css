@@ -1,0 +1,114 @@
+#root{
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  
+
+  justify-content: center;
+}
+
+html{
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: 0px;
+}
+
+#contenedor-principal{
+  height: 100%;
+  width: 100%;
+}
+
+
+.seccionProductos{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    place-items: center;
+    width: 85%;
+    background-color: rgb(224, 224, 224);
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.cont-home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+}
+.cont-perfil{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+  box-sizing: border-box;
+}
+
+
+
+
+.cont-pag{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+ 
+  padding-top: 120px;
+  box-sizing: border-box;
+}
+
+
+.cont-ordenar{
+  display: flex;
+  margin-top: 10px;
+  
+}
+.ordenar{
+  height: 30px;
+  width: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(41, 39, 39);
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  color: white;
+  font-family: "changa one";
+}
+
+.opciones{
+  height: 30px;
+  width: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  
+  font-family: "changa one";
+}

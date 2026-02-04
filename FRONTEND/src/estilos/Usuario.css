@@ -1,0 +1,80 @@
+.cont-usuario{
+    display: flex;
+    flex-direction: row;
+
+    width: 150px;
+    gap: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    
+    align-items: center;
+    justify-content: center;
+    
+
+    
+}
+.cont-usuario:hover{
+    background-color: rgb(54, 53, 53);
+}
+.activo{
+    background-color: rgb(54, 53, 53);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#imagen-usuario{
+    height:30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 0px;
+    
+}
+
+.nombre-usuario{
+    font-family: "changa one";
+    color: white;
+}
+
+.desplegado-usuario{
+    position: absolute;
+    position: absolute;
+    
+    right: 115px;
+
+    height: 160px;
+    width: 150px;
+    background-color: rgb(248, 246, 246);
+
+
+    font-size: 15px;
+    font-family: "changa one";
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+
+}
+
+.opcion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    transition: .3s;
+    
+}
+#btn-perfil, #btn-publicaciones{
+    color: black;
+}
+
+.opcion:hover{
+    background-color: rgb(199, 197, 197);
+}
+
+.cerrar{
+    color: rgb(179, 40, 40);
+}
+.cerrar:hover{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
