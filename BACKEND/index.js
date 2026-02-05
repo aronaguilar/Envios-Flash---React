@@ -9,6 +9,7 @@ app.use(cors());
 app.use(router);
 
 
-
-// inicia el servidor en el puerto 7050
-app.listen(8080, () => console.log("SERVIDOR ESCUCHANDO EN EL PUERTO 8080"));
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () =>
+  console.log("SERVIDOR ESCUCHANDO EN EL PUERTO " + PORT)
+);
