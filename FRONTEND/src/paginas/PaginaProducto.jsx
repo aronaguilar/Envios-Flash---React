@@ -17,6 +17,8 @@ const PaginaProducto = () => {
   const [verificador, setVerificador] = useState(false);
   const [usuario, setUsuario] = useState(null);
 
+  const API_URL = import.meta.env.VITE_API_URL;
+
   useEffect(() => {
     const datos = localStorage.getItem("usuario");
     setUsuario(JSON.parse(datos));
@@ -24,7 +26,7 @@ const PaginaProducto = () => {
   }, []);
 
   useEffect(() => {
-    fetch(`http://localhost:8080/productos/${id}`)
+    fetch(`${API_URL}/productos/${id}`)
       .then(res => res.json())
       .then(data => setProducto(data));
   }, [id]);
@@ -36,7 +38,7 @@ const PaginaProducto = () => {
       const idProducto = producto.id;
       const idUsuario = usuario.id;
 
-      const respuesta = await fetch("http://localhost:8080/carrito/verificar", {
+      const respuesta = await fetch(`${API_URL}/carrito/verificar`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -62,7 +64,7 @@ const PaginaProducto = () => {
       const idProducto = producto.id;
       const idUsuario = usuario.id;
 
-      await fetch("http://localhost:8080/carrito/agregar", {
+      await fetch(`${API_URL}/carrito/agregar`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -19,9 +19,11 @@ const Buscador = () => {
   const parametros = textoBuscado.split(" ").filter(p => p !== "");
   console.log(textoBuscado)
 
+  const API_URL = import.meta.env.VITE_API_URL;
+
   const ralizarBusqueda = async () =>{
 
-        const respuesta = await fetch("http://localhost:8080/buscador", {
+        const respuesta = await fetch(`${API_URL}/buscador`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -4,13 +4,15 @@ import '../estilos/Registrar.css';
 
 function Registrarse(){
 
-    const [nombre, setNombre] = useState("")
-    const [apellido, setApellido] = useState("")
-    const [gmail, setGmail] = useState("")
-    const [contraseña, setContraseña] = useState("")
+    const [nombre, setNombre] = useState("");
+    const [apellido, setApellido] = useState("");
+    const [gmail, setGmail] = useState("");
+    const [contraseña, setContraseña] = useState("");
 
-    const [error, setError] = useState(false)
-    const [mensaje, setMensaje] = useState("")
+    const [error, setError] = useState(false);
+    const [mensaje, setMensaje] = useState("");
+
+    const API_URL = import.meta.env.VITE_API_URL;
 
     const handleSubmit = async (evento) => {    
         evento.preventDefault() // ESTA FUNCION EVITA QUE SE RECARGUE LA PAGINA CUANDO SE DA CLICK
@@ -23,7 +25,7 @@ function Registrarse(){
 
         try{
 
-            const respuesta = await fetch("http://localhost:8080/registrar", {
+            const respuesta = await fetch(`${API_URL}/registrar`, {
                 method: "POST",
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify({nombre,apellido,gmail,contraseña})

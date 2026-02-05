@@ -16,7 +16,7 @@ const ProductoCarrito = ({imagen, nombre, precio, idProducto, cantidad ,obtenerC
         setUsuario(JSON.parse(datos)); // parse convierte el texto en arrays (en localStorage se guarda texto)
     }, []);
 
-    
+    const API_URL = import.meta.env.VITE_API_URL;
 
     const eliminarDeCarrito = async () =>{
 
@@ -24,7 +24,7 @@ const ProductoCarrito = ({imagen, nombre, precio, idProducto, cantidad ,obtenerC
         console.log(idUsuario);
         console.log(idProducto);
 
-        const respuesta = await fetch("http://localhost:8080/carrito/borrar", {
+        const respuesta = await fetch(`${API_URL}/carrito/borrar`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -43,7 +43,7 @@ const ProductoCarrito = ({imagen, nombre, precio, idProducto, cantidad ,obtenerC
       
       const idUsuario = usuario.id
 
-      const respuesta = await fetch("http://localhost:8080/carrito/aumentar", {
+      const respuesta = await fetch(`${API_URL}/carrito/aumentar`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -63,7 +63,7 @@ const ProductoCarrito = ({imagen, nombre, precio, idProducto, cantidad ,obtenerC
       
       const idUsuario = usuario.id
 
-      const respuesta = await fetch("http://localhost:8080/carrito/disminuir", {
+      const respuesta = await fetch(`${API_URL}/carrito/disminuir`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

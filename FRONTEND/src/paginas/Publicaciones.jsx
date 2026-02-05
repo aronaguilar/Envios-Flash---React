@@ -10,6 +10,7 @@ const Publicaciones = () => {
 
     const [productos, setProductos] = useState([]);
     const [usuario, setUsuario] = useState(null)
+    const API_URL = import.meta.env.VITE_API_URL;
 
     ///////////RECIBE LOS DATOS DEL USUARIO GUARDADO///////////////////
     useEffect(() =>{
@@ -23,7 +24,7 @@ const Publicaciones = () => {
     const obtenerPublicaciones = async () =>{
 
         try{
-            const respuesta = await fetch(`http://localhost:8080/publicaciones/${usuario.id}`);
+            const respuesta = await fetch(`${API_URL}/publicaciones/${usuario.id}`);
             const datos = await respuesta.json();
             console.log(datos);
             setProductos(datos.reverse());

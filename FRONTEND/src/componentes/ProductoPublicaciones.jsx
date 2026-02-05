@@ -7,6 +7,8 @@ const ProductoPublicaciones = ({imagen, nombre, precio, idProducto ,obtenerPubli
 
     const [usuario, setUsuario] = useState(null);
 
+    const API_URL = import.meta.env.VITE_API_URL;
+
     ///////////RECIBE LOS DATOS DEL USUARIO GUARDADO///////////////////
     useEffect(() =>{
             
@@ -22,7 +24,7 @@ const ProductoPublicaciones = ({imagen, nombre, precio, idProducto ,obtenerPubli
         console.log(idUsuario);
         console.log(idProducto);
 
-        const respuesta = await fetch(`http://localhost:8080/publicaciones/borrar/${idUsuario}/${idProducto}`, {
+        const respuesta = await fetch(`${API_URL}/publicaciones/borrar/${idUsuario}/${idProducto}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

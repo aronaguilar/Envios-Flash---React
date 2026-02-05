@@ -20,6 +20,8 @@ function Login(){
 
     //////////////NO RECARGAR PAGINA Y CAMPOS VACIOS///////////
 
+    const API_URL = import.meta.env.VITE_API_URL; ////cambiar la url del back si muere esa url
+
     const handleSubmit = async (evento) => {    
         evento.preventDefault(); // ESTA FUNCION EVITA QUE SE RECARGUE LA PAGINA CUANDO SE DA CLICK
 
@@ -29,8 +31,9 @@ function Login(){
         }
         setError(false); //QUITA EL ERROR SI SE LLENAN LOS INPUT
 
+
         try{
-            const respuesta = await fetch("http://localhost:8080/usuarios",{
+            const respuesta = await fetch(`${API_URL}/usuarios`,{
                 method: "POST",
                 headers: {"Content-Type": "application/json"},      //avisa al back que es un json
                 body: JSON.stringify({gmail, contraseña})          //convertimos en json

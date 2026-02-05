@@ -18,6 +18,8 @@ const Carrito =  ()   => {
 
   const navigate = useNavigate();
 
+  const API_URL = import.meta.env.VITE_API_URL;
+
 
 
   ///////////RECIBE LOS DATOS DEL USUARIO GUARDADO///////////////////
@@ -35,7 +37,7 @@ const Carrito =  ()   => {
 
         try{
 
-            const respuesta =  await fetch(`http://localhost:8080/carrito/${usuario.id}`);
+            const respuesta =  await fetch(`${API_URL}/carrito/${usuario.id}`);
             const datos = await respuesta.json();
             setProductos(datos);
         }

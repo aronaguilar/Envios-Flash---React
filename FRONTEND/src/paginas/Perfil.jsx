@@ -24,6 +24,8 @@ const Perfil = () => {
     const [error, setError] = useState(false)
     const navigate = useNavigate();
 
+    const API_URL = import.meta.env.VITE_API_URL;
+
 
     useEffect(() =>{
 
@@ -47,7 +49,7 @@ const Perfil = () => {
 
         try{
 
-            const respuesta = await fetch("http://localhost:8080/subir",{
+            const respuesta = await fetch(`${API_URL}/subir`,{
                 method: "POST",
                 headers: {"Content-Type": "application/json"},      //avisa al back que es un json
                 body: JSON.stringify({producto, precio, descripción, tipo, color, marca, idUsuario })          //convertimos en json
