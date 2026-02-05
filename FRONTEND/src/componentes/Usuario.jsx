@@ -27,7 +27,7 @@ const Usuario = ({nombre, apellido}) => {
         <div>
             <div className={menu ? "cont-usuario activo" : "cont-usuario"} onClick={resetearMenu}>
             
-                <img src="../public/gente.png" alt="" className='imagen-usuario' id='imagen-usuario'/>
+                <img src="/gente.png" alt="" className='imagen-usuario' id='imagen-usuario'/>
                 <div className='nombre-usuario'>{nombre} {apellido}</div>
 
             </div>

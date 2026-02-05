@@ -75,7 +75,7 @@ function Header({ titulo }) {
               {usuario == null && <NavIniciar/> }  
               {usuario == null && <NavRegistrar/>}
               {usuario != null && <Usuario nombre={usuario.nombre} apellido={usuario.apellido}/>}      
-              {usuario != null && <Link  to="/Carrito" className='cont-carrito'><img src="../public/carro.png" alt="" /></Link>}
+              {usuario != null && <Link  to="/Carrito" className='cont-carrito'><img src="/carro.png" alt="" /></Link>}
       </nav>
 
     </header>

@@ -92,8 +92,8 @@ const ProductoCarrito = ({imagen, nombre, precio, idProducto, cantidad ,obtenerC
                 
                 <div className='cantidad-producto'>
                     <div>{cantidad}</div>
-                    <button className="btn-cantidad"onClick={aumentarCarrito}><img src="../public/mas.png" alt="" /></button>
-                    <button className="btn-cantidad restar"onClick={disminuirCarrito}><img src="../public/menos.png" alt="" /></button>
+                    <button className="btn-cantidad"onClick={aumentarCarrito}><img src="/mas.png" alt="" /></button>
+                    <button className="btn-cantidad restar"onClick={disminuirCarrito}><img src="/menos.png" alt="" /></button>
                 </div>
                 
                 <button className='boton-eliminar' onClick={eliminarDeCarrito}>ELIMINAR</button>
