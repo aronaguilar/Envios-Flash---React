@@ -8,9 +8,9 @@ import Footer from '../componentes/Footer';
 import Usuario from '../componentes/Usuario';
 
 const imagenes = [
-    "../public/zapas.jpg",
-    "../public/zapas.jpg",
-    "../public/zapas.jpg",
+    "/zapas.jpg",
+    "/zapas.jpg",
+    "/zapas.jpg",
   ];
 
 
